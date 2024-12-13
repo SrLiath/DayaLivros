@@ -1,30 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <meta name="Daya Livros - Ebooks" content="Daya Livros - Ebooks" />
+
+  <!-- Metatags SEO -->
+  <meta name="description"
+    content="Daya Livros - Ebook Reading Journal com catalogação de até 120 livros. Organize suas leituras e descubra novas dicas de livros. Dica de leitura da influenciadora Daya!" />
+  <meta name="keywords"
+    content="Daya Livros, influencer de livros, reading journal, catalogação de livros, organizar leituras, 120 livros, ebooks, diário de leitura, livro digital, dicas de livros, livros para ler, livro da influenciadora, Daya, @dayalivros" />
+  <meta name="author" content="Daya Livros" />
+  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+  <!-- Open Graph (OG) -->
+  <meta property="og:title" content="Daya Livros - Ebook Reading Journal" />
+  <meta property="og:description"
+    content="A influenciadora Daya Livros lançou o Ebook Reading Journal para você organizar suas leituras e catalogar até 120 livros. Aproveite dicas exclusivas de livros e organize sua jornada literária!" />
+  <meta property="og:image" content="%PUBLIC_URL%/logo192.png" />
+  <meta property="og:url" content="https://www.dayalivros.com.br" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Daya Livros" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:updated_time" content="2024-12-13T12:00:00Z" />
+  <meta property="og:availability" content="Online" />
+  <meta property="og:author" content="@dayalivros" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@dayalivros" />
+  <meta name="twitter:title" content="Daya Livros - Ebook Reading Journal" />
+  <meta name="twitter:description"
+    content="Com o Ebook Reading Journal de Daya Livros, você organiza suas leituras e mantém um registro de até 120 livros lidos. Confira agora!" />
+  <meta name="twitter:image" content="%PUBLIC_URL%/logo192.png" />
+  <meta name="twitter:url" content="https://www.dayalivros.com.br" />
+
+  <!-- Schema.org / JSON-LD para dados estruturados -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Daya Livros",
+      "url": "https://www.dayalivros.com.br",
+      "description": "Daya Livros é o site da influenciadora literária Daya, com dicas de leitura e seu Ebook Reading Journal para catalogar até 120 livros.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Daya Livros",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "%PUBLIC_URL%/logo192.png"
+        }
+      },
+      "mainEntityOfPage": "https://www.dayalivros.com.br"
+    }
+  </script>
+
+  <!-- Open Graph para imagens grandes -->
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Favicon e Ícones -->
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+
+  <!-- Manifest -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Title -->
+  <title>Daya Livros - Ebook Reading Journal e Dicas Literárias</title>
 
-  <title>Daya Livros</title>
+  <!-- Metatags de compatibilidade -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <!-- Google Analytics (Exemplo) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXXXXXX-X');
+  </script>
+
+  <!-- Meta tag para compartilhamento no WhatsApp -->
+  <meta property="og:whatsapp"
+    content="whatsapp://send?text=Confira o Ebook Reading Journal da Daya Livros para organizar suas leituras! https://www.dayalivros.com.br" />
+
+  <!-- Preconnect para otimizar carregamento -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.gstatic.com">
+
+  <!-- Web Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
   <style>
     body,
     #root {
@@ -34,23 +107,14 @@
     #root {
       padding: 10px;
       background-color: #DFF0FE;
+      font-family: 'Roboto', sans-serif;
     }
   </style>
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <noscript>Você precisa habilitar o JavaScript para rodar este aplicativo.</noscript>
   <div id="root"></div>
-  <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
 </body>
 
 </html>
